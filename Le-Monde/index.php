@@ -67,6 +67,26 @@
                 <p>description</p>
             </div>
         </div>
+        <button>Voir plus</button>
+        <div class="wrap"> 
+            <h2>Thématique</h2>
+            <div class="thematique">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+            <div class="thematique">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+            <div class="thematique">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+        </div>
+        <button>Voir plus</button>
         <div class="wrap"> 
             <h2>Découvrez aussi</h2>
             <div class="discover">
@@ -85,8 +105,7 @@
                 <p>description</p>
             </div>
         </div>
-
-
+        <button>Voir plus</button>
     </main>
     <footer>
 
