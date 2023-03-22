@@ -1,5 +1,6 @@
 <?php 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -8,6 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <title>La caverne aux infos</title>
 </head>
 <body>
@@ -53,7 +55,6 @@
             <div id="wrap">
                 <h2>Thématique</h2>
                 <img src="" alt="">
-                
             </div>
         </div>
 
