@@ -49,13 +49,43 @@
         </div>
     </header>
     <main>
-        <div id="thematique"> 
-            <div id="wrap">
-                <h2>Thématique</h2>
+        <div class="wrap"> 
+            <h2>Thématique</h2>
+            <div class="thematique">
                 <img src="" alt="">
-                
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+            <div class="thematique">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+            <div class="thematique">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
             </div>
         </div>
+        <div class="wrap"> 
+            <h2>Découvrez aussi</h2>
+            <div class="discover">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+            <div class="discover">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+            <div class="discover">
+                <img src="" alt="">
+                <h2>titre</h2>
+                <p>description</p>
+            </div>
+        </div>
+
 
     </main>
     <footer>
