@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------- Navbar et logo ------------------- */
+
+#logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    justify-content: space-around;
+    background-color: #3B3B3B;
+    text-decoration: none;
+}
+#navbar ul a{
+    font-size: 3vh;
+    font-family: 'Bebas Neue';
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------------- section image choix ------------- */
+
+.box-img img{
+    width: 30vw;
+    height: 35vh;
+}
+
+.preference h2 {
+    font-size: 5vw;
+}
