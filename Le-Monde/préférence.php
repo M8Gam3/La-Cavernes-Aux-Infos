@@ -46,11 +46,11 @@
         <div id="wrap-img">
             <div class="box-img"><img src="./assets/img/sport.jpg" alt=""></div>
             <div class="box-img"><img src="./assets/img/actualite.jpg" alt=""></div>
-            <div class="box-img"><img src="./assets/img/sante.jpg" alt=""></div>  
+            <div class="box-img"><img src="./assets/img/sante.jpeg" alt=""></div>  
         </div>
         <div class="preference">
             <div class="box-img"><img src="./assets/img/environnement.jpg" alt=""></div>
-            <div class="box-img"><img src="./assets/img/economie.jpg" alt=""></div>
+            <div class="box-img"><img src="./assets/img/economie.jpeg" alt=""></div>
             <div class="box-img"><img src="./assets/img/numerique.jpg" alt=""></div>  
         </div>
     </div>
