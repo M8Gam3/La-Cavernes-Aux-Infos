@@ -19,6 +19,7 @@ $preference = (json_decode($_COOKIE['preference']));
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./assets/JS/script.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Préférences</title>
 </head>
@@ -67,35 +68,35 @@ $preference = (json_decode($_COOKIE['preference']));
                     <div>
                         <input class="hidenInput" type="checkbox" id="sport" name="sport" <?= isset($preference -> sport) ? 'checked' : ""  ?>>
                         <label for="sport">
-                            <img src="./assets/img/sport.png">
+                            <img id="sportDiv" src="./assets/img/sport.png">
                         </label>
                     </div>
                     <div>
                         <input class="hidenInput" type="checkbox" id="economy" name="economy" <?= isset($preference -> economy) ? 'checked' : ""  ?>>
                         <label for="economy">
-                            <img src="./assets/img/economie.png">
+                            <img id="economyDiv" src="./assets/img/economie.png">
                         </label>
                     </div>
 
                     <div>
                         <input class="hidenInput" type="checkbox" id="environment" name="environment" <?= isset($preference -> environment) ? 'checked' : ""  ?>>
-                        <label for="environment"><img src="./assets/img/environnement.png"></label>
+                        <label for="environment"><img id="environmentDiv" src="./assets/img/environnement.png"></label>
                     </div>
                 </div>
                 <div class="three">
                     <div>
                         <input class="hidenInput" type="checkbox" id="politics" name="politics" <?= isset($preference -> politics) ? 'checked' : ""  ?>>
-                        <label for="politics"><img src="./assets/img/politique.png"></label>
+                        <label for="politics"><img id="politicsDiv" src="./assets/img/politique.png"></label>
                     </div>
 
                     <div>
                         <input class="hidenInput" type="checkbox" id="numeric" name="numeric" <?= isset($preference -> numeric) ? 'checked' : ""  ?>> 
-                        <label for="numeric"><img src="./assets/img/numerique.png"></label>
+                        <label for="numeric"><img id="numericDiv" src="./assets/img/numerique.png"></label>
                     </div>
 
                     <div>
                         <input class="hidenInput" type="checkbox" id="sante" name="sante" <?= isset($preference -> sante) ? 'checked' : ""  ?>>
-                        <label for="sante"><img src="./assets/img/sante.png"></label>
+                        <label for="sante"><img id="santeDiv" src="./assets/img/sante.png"></label>
                     </div>
                 </div>
             </div>
