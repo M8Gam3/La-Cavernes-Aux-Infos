@@ -74,10 +74,10 @@ if(isset($_COOKIE['preference'])){
     </header>
 
     <main>
-                <!-- Si l'utilisateur n'a pas de favoris -->
-                <?php if (empty($preference)) { ?>
-                <p>Vous n'avez pas de préférences</p>
-                <?php } ?>
+            <!-- Si l'utilisateur n'a pas de favoris -->
+            <?php if (empty($preference)) { ?>
+            <p>Vous n'avez pas de préférences</p>
+            <?php } ?>
         
             <!-- Section Sport -->
             <?php
