@@ -5,7 +5,7 @@ if(($_SERVER['REQUEST_METHOD'] === 'POST')){
     $preference = json_encode($_POST);
     setcookie('preference', $preference,strtotime("+1 year"));
     // $_COOKIE['preference'] = $preference;
-    header('Location: ./accueilClean.php');
+    header('Location: ./index.php');
     die;
 }
 
@@ -53,14 +53,14 @@ $preference = (json_decode($_COOKIE['preference']));
         </div>
         <div id="navbar">
             <ul>
-                <a href="./accueilClean.php">Vos thématiques</a>
+                <a href="./index.php">Vos thématiques</a>
                 <a href="./preferences.php">Mes Préférences</a>
                 <a href="">Découvrez aussi</a>
             </ul>
         </div>
     </header>
 
-    <h1>Vos préférences</h1>
+    <h1>Sélectionnez vos préférences</h1>
 
         <form id="preference" name="preference" method="post">
             <div id="formContainer">
