@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------- header avec bar de navigation ------------------- */
+
+#logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    justify-content: space-around;
+    background-color: #3B3B3B;
+    text-decoration: none;
+}
+#navbar ul a{
+    font-size: 3vh;
+    font-family: 'Bebas Neue';
+    color: white;
+    text-decoration: none;
+}
+
+/* ----------------- bloc des thématiques choisis ------------------- */
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    padding : 20px 0 20px 0;
+}
+.title-section{
+    font-size: 7vh;
+    margin: 2vh;
+    margin-top: 4vh;
+}
+.img-size{
+    width: 25vw;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.btn button{
+    color: rgb(33, 33, 33);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: #ffffff;
+    font-family: 'Bebas Neue';
+    transition: 0.5s;
+}
+.btn button:hover{
+    color: rgb(255, 255, 255);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: rgb(33, 33, 33);
+    font-family: 'Bebas Neue';
+}
+
+.btn input{
+    color: rgb(33, 33, 33);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: #ffffff;
+    font-family: 'Bebas Neue';
+    transition: 0.5s;
+}
+.btn input:hover{
+    color: rgb(255, 255, 255);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: rgb(33, 33, 33);
+    font-family: 'Bebas Neue';
+}
+
+.articleContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.thematique{
+    padding: 20px 0 20px 0;
+}
+
+.titleArticles{
+    width: 25vw;
+}
+
+.descriptionArticles{
+    width: 25vw;;
+}
+
+h2{
+    padding-left: 10vw;
+    padding-top:30px;
+}
+
+.hidenInput{
+    /* display:none; */
+}
+
+#formContainer{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.three{
+    display:flex;
+}
+
+.textOver{
+    position: absolute;
+    bottom: 50%;
+}
+
+/* Page 1 article */
+
+#mainOneArticle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainOneArticle img, #mainOneArticle p, #mainOneArticle h1{
+    width: 60vw;
+}
+
+
+
+#mainOneArticle h1{
+    /* text-align: center; */
+}
