@@ -5,6 +5,11 @@ $index = intval($_GET['articleSimple']);
 
 $xmldecrypt = simplexml_load_file($url);
 
+
+if(isset($_COOKIE['preference'])){
+    $preference = (json_decode($_COOKIE['preference']));
+}
+
 ?>
 
 <!DOCTYPE html>

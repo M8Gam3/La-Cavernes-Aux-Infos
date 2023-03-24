@@ -3,6 +3,9 @@
 $listeXML = simplexml_load_file($_GET['sante']); 
 
 
+if(isset($_COOKIE['preference'])){
+    $preference = (json_decode($_COOKIE['preference']));
+}
 
 ?>
 

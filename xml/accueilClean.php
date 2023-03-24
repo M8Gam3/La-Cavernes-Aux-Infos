@@ -8,7 +8,7 @@ $urlXmlEnvironnement = 'https://www.lefigaro.fr/rss/figaro_sciences.xml';
 $urlPolitique = 'https://services.lesechos.fr/rss/les-echos-politique.xml';
 $urlNumerique = 'https://services.lesechos.fr/rss/les-echos-tech-medias.xml';
 $urlXmlSante = 'https://services.lesechos.fr/rss/les-echos-idees.xml';
-$urlAutres = 'https://www.ouest-france.fr/rss/une';
+$urlAutres = 'https://www.lepoint.fr/24h-infos/rss.xml';
 
 // liste xml
 $xmlSport = simplexml_load_file($urlXmlSport); //sport
@@ -20,16 +20,11 @@ $xmlSanté = simplexml_load_file($urlXmlSante); //Idées : retrouvez les analyse
 $xmlAutres = simplexml_load_file($urlAutres);
 
 
-// Création des cookies
-if(isset($_POST)){
-    $preference = json_encode($_POST);
-    setcookie('preference', $preference,strtotime("+1 year"));
-    $_COOKIE['preference'] = $preference;
-}
-  
-  if(isset($_COOKIE['preference'])){
+// Création des cookies  
+if(isset($_COOKIE['preference'])){
     $preference = (json_decode($_COOKIE['preference']));
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +75,7 @@ if(isset($_POST)){
 
     <main>
                 <!-- Si l'utilisateur n'a pas de favoris -->
-                <?php if (empty($_POST)) { ?>
+                <?php if (empty($preference)) { ?>
                 <p>Vous n'avez pas de préférences</p>
                 <?php } ?>
         
@@ -174,7 +169,7 @@ if(isset($_POST)){
                     <form method="get" action="./oneArticle.php" >
                         <input type="checkbox" style="display:none" value="<?php echo $urlXmlEconomie ?>" name="xmlurl" checked>
                         <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-                        <input value="Lire l'article" type="submit" href="<?php echo $titres[$i] -> link?>"></input>
+                        <input value="Lire l'article" type="submit" href="<?php echo $titresEco[$i] -> link?>"></input>
                         </div>
                     </form> 
                     <?php }   ?>
