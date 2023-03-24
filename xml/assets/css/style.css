@@ -1,7 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'rel='stylesheet");
 *{
+    font-family: 'Helvetica Neue';
     margin: 0;
     padding: 0;
+    color: 131313;
 }
+h1{
+    font-family: 'Bebas Neue';
+    margin-left: 4vw;
+    font-size: 4vw;
+}
+
 
 /* --------------- header avec bar de navigation ------------------- */
 
@@ -10,6 +19,8 @@
     display: flex;
     justify-content: center;
     height: 20vh;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 #navbar ul{
     display: flex;
@@ -17,7 +28,7 @@
     width: 100%;
     height: 6vh;
     justify-content: space-around;
-    background-color: #3B3B3B;
+    background-color: #551C23;
     text-decoration: none;
 }
 #navbar ul a{
@@ -46,6 +57,7 @@
     display: flex;
     justify-content: center;
     margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .btn button{
     color: rgb(33, 33, 33);
@@ -82,11 +94,26 @@
     background-color: rgb(33, 33, 33);
     font-family: 'Bebas Neue';
 }
+#text-pref{
+    font-size: 2vw;
+    margin: 2vw;
+}
+
+/*---------- section decouvrez aussi --------- */
 
 .articleContainer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 2vw;
+}
+.date-article{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-style:oblique
+}
+#title-otherArticle{
+    margin: 2vw;
 }
 
 .thematique{
@@ -101,10 +128,7 @@
     width: 25vw;;
 }
 
-h2{
-    padding-left: 10vw;
-    padding-top:30px;
-}
+
 
 .hidenInput{
     /* display:none; */
@@ -127,18 +151,91 @@ h2{
 
 /* Page 1 article */
 
-#mainOneArticle{
+#container-article{
+    display: flex;
+    margin: 2vw;
+}
+#img-article{
+    width:50vw!important ;
+}
+
+#description-oneArticle{
+    font-size: 2vw;
+    margin: 2vw;
+}
+#date-oneArticle{
+    margin: 2vw;
+    font-style: oblique;
+}
+#btn-readArticle{
+    margin-left: 2vw;
+}
+
+#mainOneArticle h1{
+    font-family: 'Helvetica Neue';
+    width: 70%;
+    /* font-weight: bold; */
+    margin-top: 2vw ;
+    margin-bottom:2vw ;
+    padding-bottom:2vw ;
+    border-bottom: solid #551C23 2px;
+}
+
+/*------- bouton lire article et autres boutons ----- */
+
+.btn-readmore{
+    color: rgb(33, 33, 33);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: #ffffff;
+    font-family: 'Bebas Neue';
+    transition: 0.5s;
+
+}
+.btn-readmore:hover{
+    color: rgb(255, 255, 255);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: rgb(33, 33, 33);
+    font-family: 'Bebas Neue';
+}
+
+
+/*--------- Footer ------*/
+
+*{
+    margin: 0;
+}
+footer{
+    background-color: #3B3B3B;
+    color: white;
+    font-family: 'Bebas Neue';
+    height: 45vh;
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: space-around;
+}
+.logo img{
+    height: 25vh;
+}
+
+.box1{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
-
-#mainOneArticle img, #mainOneArticle p, #mainOneArticle h1{
-    width: 60vw;
+.box2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
-
-
-
-#mainOneArticle h1{
-    /* text-align: center; */
+.box3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
