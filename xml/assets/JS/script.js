@@ -21,6 +21,7 @@ numericFlag = 0;
 santeFlag = 0;
 
 sport.addEventListener("click", function(){
+    alert('heyyyyyyyyyyyyyy!')
     if (economyFlag%2 == 0) {
         sportDiv.classList.add("border-select");
     } else {
