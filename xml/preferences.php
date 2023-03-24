@@ -55,37 +55,37 @@ $preference = (json_decode($_COOKIE['preference']));
         <form id="preference" name="preference" method="post" action="./accueilClean.php">
             <div id="formContainer">
                 <div class="three">
-                    <div id="sport">
-                        <input class="hidenInput" type="checkbox" name="sport" <?= isset($preference -> sport) ? 'checked' : ""  ?>>
+                    <div id="sportDiv" class="">
+                        <input class="hidenInput" type="checkbox" id="sport" name="sport" <?= isset($preference -> sport) ? 'checked' : ""  ?>>
                         <label for="sport">
                             <img src="./assets/img/sport.png">
                         </label>
                     </div>
-                    <div id="economy">
-                        <input class="hidenInput" type="checkbox" name="economy" <?= isset($preference -> economy) ? 'checked' : ""  ?>>
+                    <div id="economyDiv" class="">
+                        <input class="hidenInput" type="checkbox" id="economy" name="economy" <?= isset($preference -> economy) ? 'checked' : ""  ?>>
                         <label for="economy">
                             <img src="./assets/img/economie.png">
                         </label>
                     </div>
 
-                    <div id="environment">
-                        <input class="hidenInput" type="checkbox" name="environment" <?= isset($preference -> environment) ? 'checked' : ""  ?>>
+                    <div id="environmentDiv" class="">
+                        <input class="hidenInput" type="checkbox" id="environment" name="environment" <?= isset($preference -> environment) ? 'checked' : ""  ?>>
                         <label for="environment"><img src="./assets/img/environnement.png"></label>
                     </div>
                 </div>
                 <div class="three">
-                    <div id="politics">
-                        <input class="hidenInput" type="checkbox" name="politics" <?= isset($preference -> politics) ? 'checked' : ""  ?>>
+                    <div id="politicsDiv" class="">
+                        <input class="hidenInput" type="checkbox" id="politics" name="politics" <?= isset($preference -> politics) ? 'checked' : ""  ?>>
                         <label for="politics"><img src="./assets/img/politique.png"></label>
                     </div>
 
-                    <div id="numeric">
-                        <input class="hidenInput" type="checkbox" name="numeric" <?= isset($preference -> numeric) ? 'checked' : ""  ?>> 
+                    <div id="numericDiv" class="">
+                        <input class="hidenInput" type="checkbox" id="numeric" name="numeric" <?= isset($preference -> numeric) ? 'checked' : ""  ?>> 
                         <label for="numeric"><img src="./assets/img/numerique.png"></label>
                     </div>
 
-                    <div id="sante">
-                        <input class="hidenInput" type="checkbox" name="sante" <?= isset($preference -> sante) ? 'checked' : ""  ?>>
+                    <div id="santeDiv" class="">
+                        <input class="hidenInput" type="checkbox" id="sante" name="sante" <?= isset($preference -> sante) ? 'checked' : ""  ?>>
                         <label for="sante"><img src="./assets/img/sante.png"></label>
                     </div>
                 </div>
