@@ -20,7 +20,7 @@ politicsFlag = 0;
 numericFlag = 0;
 santeFlag = 0;
 
-sport.addEventListener("click", function(){
+sportDiv.addEventListener("click", function(){
     alert('heyyyyyyyyyyyyyy!')
     if (economyFlag%2 == 0) {
         sportDiv.classList.add("border-select");
@@ -30,7 +30,7 @@ sport.addEventListener("click", function(){
     sportFlag++;
 });
 
-economy.addEventListener("click", function(){
+economyDiv.addEventListener("click", function(){
     if (economyFlag%2 == 0) {
         economyDiv.classList.add("border-select");
     } else {
@@ -39,7 +39,7 @@ economy.addEventListener("click", function(){
     economyFlag++;
 });
 
-environment.addEventListener("click", function(){
+environmentDiv.addEventListener("click", function(){
     if (environmentFlag%2 == 0) {
         environmentDiv.classList.add("border-select");
     } else {
@@ -48,7 +48,7 @@ environment.addEventListener("click", function(){
     environmentFlag++;
 });
 
-politics.addEventListener("click", function(){
+politicsDiv.addEventListener("click", function(){
     if (politicsFlag%2 == 0) {
         politicsDiv.classList.add("border-select");
     } else {
@@ -57,7 +57,7 @@ politics.addEventListener("click", function(){
     politicsFlag++;
 });
 
-numeric.addEventListener("click", function(){
+numericDiv.addEventListener("click", function(){
     if (numericFlag%2 == 0) {
         numericDiv.classList.add("border-select");
     } else {
@@ -66,7 +66,7 @@ numeric.addEventListener("click", function(){
     numericFlag++;
 });
 
-sante.addEventListener("click", function(){
+santeDiv.addEventListener("click", function(){
     if (santeFlag%2 == 0) {
         santeDiv.classList.add("border-select");
     } else {
