@@ -20,6 +20,8 @@ politicsFlag = 0;
 numericFlag = 0;
 santeFlag = 0;
 
+console.log(sportDiv)
+
 sportDiv.addEventListener("click", function(){
     alert('heyyyyyyyyyyyyyy!')
     if (economyFlag%2 == 0) {
