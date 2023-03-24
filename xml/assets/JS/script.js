@@ -1,17 +1,9 @@
-let sport = document.querySelector("#sport");
-let economy = document.querySelector("#economy");
-let environment = document.querySelector("#environment");
-let politics = document.querySelector("#politics");
-let numeric = document.querySelector("#numeric");
-let sante = document.querySelector("#sante");
-
 let sportDiv = document.querySelector("#sportDiv");
 let economyDiv = document.querySelector("#economyDiv");
 let environmentDiv = document.querySelector("#environmentDiv");
 let politicsDiv = document.querySelector("#politicsDiv");
 let numericDiv = document.querySelector("#numericDiv");
 let santeDiv = document.querySelector("#santeDiv");
-
 
 sportFlag = 0;
 economyFlag = 0;
