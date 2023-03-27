@@ -56,7 +56,7 @@ $xmldecrypt = simplexml_load_file($url);
             </div>
             <div class="box2">
                 <div class="logo">
-                    <img src="./assets/img/logo_lcai.png" alt="">
+                    <img src="./assets/img/logo_blanc.png" alt="">
                 </div>
                 <div class="reseaux">
                     <img src="./assets/img/discord.png" alt="">
