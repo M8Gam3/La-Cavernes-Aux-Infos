@@ -478,7 +478,7 @@ if(isset($_COOKIE['preference'])){
             </div>
             <div class="box2">
                 <div class="logo">
-                    <img src="./assets/img/logo_blanc" alt="">
+                    <img src="./assets/img/logo_blanc.png" alt="">
                 </div>
                 <div class="reseaux">
                     <img src="./assets/img/discord.png" alt="">
