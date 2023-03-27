@@ -121,6 +121,17 @@ h2{
     display:flex;
 }
 
+@media (max-width: 660px) {
+    .three{
+        display:flex;
+        flex-direction: column;
+    }
+    #formContainer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
 .textOver{
     position: absolute;
     bottom: 50%;
@@ -140,9 +151,9 @@ h2{
 
 
 
-#mainOneArticle h1{
+/* #mainOneArticle h1{
     /* text-align: center; */
-}
+/* } */ 
 
 /* Bouton préférence bordure */
 .border-select{
