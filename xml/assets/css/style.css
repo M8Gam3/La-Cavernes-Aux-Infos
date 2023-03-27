@@ -212,13 +212,31 @@ p{
 
 #description-oneArticle{
     font-size: 2vw;
-    margin: 2vw;
+    margin: 0 2vw 2vw 2vw;
 }
 #date-oneArticle{
-    margin: 2vw;
+    margin: 0 2vw 2vw 2vw;
     font-style: oblique;
 }
-#btn-readArticle{
-    margin-left: 2vw;
+
+
+.btn-readmore{
+    color: rgb(33, 33, 33);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: #ffffff;
+    font-family: 'Bebas Neue';
+    transition: 0.5s;
+    margin-left: 20px;
+
+}
+.btn-readmore:hover{
+    color: rgb(255, 255, 255);
+    width: 15vw;
+    height: 5vh;
+    border: solid 2px;
+    background-color: rgb(33, 33, 33);
+    font-family: 'Bebas Neue';
 }
 
