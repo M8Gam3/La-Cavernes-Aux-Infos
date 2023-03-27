@@ -197,3 +197,33 @@ p{
 #formContainer img{
     height: 200px;
 }
+
+#container-article{
+    display: flex;
+    margin: 2vw;
+}
+#img-article{
+    width:50vw!important ;
+}
+
+#description-oneArticle{
+    font-size: 2vw;
+    margin: 2vw;
+}
+#date-oneArticle{
+    margin: 2vw;
+    font-style: oblique;
+}
+#btn-readArticle{
+    margin-left: 2vw;
+}
+
+#mainOneArticle h1{
+    font-family: 'Helvetica Neue';
+    width: 70%;
+    /* font-weight: bold; */
+    margin-top: 2vw ;
+    margin-bottom:2vw ;
+    padding-bottom:2vw ;
+    border-bottom: solid #551C23 2px;
+}
