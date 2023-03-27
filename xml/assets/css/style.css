@@ -177,6 +177,15 @@ h2{
     width: 60vw;
 }
 
+#mainOneArticle h1{
+    font-family: 'Helvetica Neue';
+    width: 70%;
+    /* font-weight: bold; */
+    margin-top: 2vw ;
+    margin-bottom:2vw ;
+    padding-bottom:2vw ;
+    border-bottom: solid #551C23 2px;
+}
 
 
 #mainOneArticle h1{
