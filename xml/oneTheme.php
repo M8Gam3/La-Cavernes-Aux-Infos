@@ -50,7 +50,7 @@ if(isset($_COOKIE['preference'])){
             <ul>
                 <a href="./index.php">Vos thématiques</a>
                 <a href="./preferences.php">Mes Préférences</a>
-                <a href="">Découvrez aussi</a>
+                <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
             </ul>
         </div>
     </header>
