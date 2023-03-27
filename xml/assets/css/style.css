@@ -244,3 +244,23 @@ p{
     font-family: 'Bebas Neue';
 }
 
+
+/* Footer */
+.box1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
