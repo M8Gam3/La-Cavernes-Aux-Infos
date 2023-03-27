@@ -33,7 +33,9 @@ if(isset($_COOKIE['preference'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
     <title>Document</title>
 </head>
 <body>
@@ -117,8 +119,9 @@ if(isset($_COOKIE['preference'])){
                 <input type="checkbox" style="display:none" value="<?php echo $urlXmlSport ?>" name="xmlurl" checked>
                 <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
                 <input class="readArticle" value="Lire l'article" type="submit" href="<?php echo $titres[$i] -> link?>"></input>
-                </div>
                 </form>
+                </div>
+
                 <?php }   ?>
 
                 </div> 
