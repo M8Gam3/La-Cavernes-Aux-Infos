@@ -18,7 +18,7 @@ if(isset($_COOKIE['preference'])){
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mediaqueries.css">
 
-    <title>Document</title>
+    <title>La caverne aux infos - Thème</title>
 </head>
 <body>
 
@@ -55,6 +55,19 @@ if(isset($_COOKIE['preference'])){
                 <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
             </ul>
         </div>
+
+        <div class="menu">
+            <!-- Utilisation d'une checkbox -->
+            <input type="checkbox" id="hamburger">
+            <!-- Label de la checkbox -->
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <!-- Le reste du menu -->
+            <nav>
+                <a href="./index.php">Vos thématiques</a>
+                <a href="./preferences.php">Mes Préférences</a>
+                <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -88,7 +101,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Date de publication de l'article -->
                     <p>
-                    <?php echo $listeXMLitem[$i] -> pubDate ?> </p>
+                    <?php $date = $listeXMLitem[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                     <!-- Bouton pour afficher l'article en grand pour le lire -->
                     <form method="get" action="./oneArticle.php" >

@@ -16,7 +16,7 @@ $xmldecrypt = simplexml_load_file($url);
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mediaqueries.css">
 
-    <title>Document</title>
+    <title>La caverne aux infos - Article</title>
 </head>
 <body>
 <header>
@@ -30,6 +30,19 @@ $xmldecrypt = simplexml_load_file($url);
                 <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
             </ul>
         </div>
+
+        <div class="menu">
+            <!-- Utilisation d'une checkbox -->
+            <input type="checkbox" id="hamburger">
+            <!-- Label de la checkbox -->
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <!-- Le reste du menu -->
+            <nav>
+                <a href="./index.php">Vos thématiques</a>
+                <a href="./preferences.php">Mes Préférences</a>
+                <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
+            </nav>
+        </div>
     </header>
     <main id="mainOneArticle">
         <h1><?php echo $xmldecrypt -> channel -> item[$index] -> title?></h1>
@@ -39,7 +52,7 @@ $xmldecrypt = simplexml_load_file($url);
             </div>
             <div id="desc-date-article">
                 <p id="description-oneArticle"><?php echo $xmldecrypt -> channel -> item[$index] -> description?></p>
-                <p id="date-oneArticle"><?php echo $xmldecrypt -> channel -> item[$index] -> pubDate?></p>
+                <p id="date-oneArticle"><?php $date = $xmldecrypt -> channel -> item[$index] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y');?></p>
                 <a href="<?php echo $xmldecrypt -> channel -> item[$index] -> link?>"><button id="btn-readarticle" class="btn-readmore">Lire l'article sur le site officiel</button></a>
             </div>    
         </div>

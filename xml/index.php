@@ -36,7 +36,7 @@ if(isset($_COOKIE['preference'])){
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mediaqueries.css">
-    <title>Document</title>
+    <title>La caverne aux infos</title>
 </head>
 <body>
 
@@ -68,10 +68,23 @@ if(isset($_COOKIE['preference'])){
         </div>
         <div id="navbar">
             <ul>
-                <a href="#">Vos thématiques</a>
+                <a href="./index.php">Vos thématiques</a>
                 <a href="./preferences.php">Mes Préférences</a>
                 <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
             </ul>
+        </div>
+
+        <div class="menu">
+            <!-- Utilisation d'une checkbox -->
+            <input type="checkbox" id="hamburger">
+            <!-- Label de la checkbox -->
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <!-- Le reste du menu -->
+            <nav>
+                <a href="./index.php">Vos thématiques</a>
+                <a href="./preferences.php">Mes Préférences</a>
+                <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
+            </nav>
         </div>
     </header>
 
@@ -112,7 +125,7 @@ if(isset($_COOKIE['preference'])){
 
                 <!-- Date de publication de l'article -->
                 <p>
-                <?php echo $titres[$i] -> pubDate ?> </p>
+                <?php $date = $titres[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                 <!-- Bouton pour afficher l'article en grand pour le lire -->
                 <form method="get" action="./oneArticle.php" >
@@ -167,7 +180,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Date de publication de l'article -->
                     <p>
-                    <?php echo $titresEco[$i] -> pubDate ?> </p>
+                    <?php $date = $titres[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                     <!-- Bouton pour afficher l'article en grand pour le lire -->
                     <form method="get" action="./oneArticle.php" >
@@ -222,7 +235,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Date de publication de l'article -->
                     <p>
-                    <?php echo $titresEnvir[$i] -> pubDate ?> </p>
+                    <?php $date = $titres[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                     <!-- Bouton pour afficher l'article en grand pour le lire -->
                     <form method="get" action="./oneArticle.php" >
@@ -277,7 +290,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Date de publication de l'article -->
                     <p>
-                    <?php echo $titrespol[$i] -> pubDate ?> </p>
+                    <?php $date = $titres[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                     <!-- Bouton pour afficher l'article en grand pour le lire -->
                     <form method="get" action="./oneArticle.php" >
@@ -335,7 +348,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Date de publication de l'article -->
                     <p>
-                    <?php echo $titresnum[$i] -> pubDate ?> </p>
+                    <?php $date = $titresnum[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                     <!-- Bouton pour afficher l'article en grand pour le lire -->
                     <form method="get" action="./oneArticle.php" >
@@ -389,7 +402,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Date de publication de l'article -->
                     <p>
-                    <?php echo $titressan[$i] -> pubDate ?> </p>
+                    <?php $date = $titressan[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                     <!-- Bouton pour afficher l'article en grand pour le lire -->
                     <form method="get" action="./oneArticle.php" >
@@ -445,7 +458,7 @@ if(isset($_COOKIE['preference'])){
 
                 <!-- Date de publication de l'article -->
                 <p>
-                <?php echo $titres[$i] -> pubDate ?> </p>
+                <?php $date = $titres[$i] -> pubDate; $date = new DateTime(); echo $date ->format('d-m-Y'); ?> </p>
 
                 <!-- Bouton pour afficher l'article en grand pour le lire -->
                 <form method="get" action="./oneArticle.php" >

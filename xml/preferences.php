@@ -23,7 +23,7 @@ $preference = (json_decode($_COOKIE['preference']));
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mediaqueries.css">
 
-    <title>Préférences</title>
+    <title>La caverne aux infos - Préférences</title>
 </head>
 <body>
 
@@ -60,9 +60,22 @@ $preference = (json_decode($_COOKIE['preference']));
                 <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
             </ul>
         </div>
+
+        <div class="menu">
+            <!-- Utilisation d'une checkbox -->
+            <input type="checkbox" id="hamburger">
+            <!-- Label de la checkbox -->
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <!-- Le reste du menu -->
+            <nav>
+                <a href="./index.php">Vos thématiques</a>
+                <a href="./preferences.php">Mes Préférences</a>
+                <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
+            </nav>
+        </div>
     </header>
 
-    <h1>Sélectionnez vos préférences</h1>
+    <h1 class="prefh1">Sélectionnez vos préférences</h1>
 
         <form id="preference" name="preference" method="post">
             <div id="formContainer">
