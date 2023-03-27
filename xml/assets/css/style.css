@@ -251,6 +251,7 @@ p{
     margin: 0;
 }
 footer{
+    margin-top: 20px;
     background-color: #3B3B3B;
     color: white;
     font-family: 'Bebas Neue';
