@@ -100,7 +100,9 @@ $preference = (json_decode($_COOKIE['preference']));
                     </div>
                 </div>
             </div>
-            <input type="submit" value="confirmer">
+            <div class="btn">
+                <input type="submit" value="confirmer">
+            </div>
         </form>
 
 </body>
