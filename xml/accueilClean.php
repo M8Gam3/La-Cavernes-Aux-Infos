@@ -42,7 +42,6 @@ if(isset($_POST)){
     <title>Document</title>
 </head>
 <body>
-
     <header>
         <div id="logo">
             <img src="./assets/img/logo_lcai.png" alt="">
