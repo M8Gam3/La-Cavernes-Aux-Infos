@@ -22,6 +22,15 @@
     .btn input {
         width: 50vw;
     }
+
+    .three{
+        display:flex;
+        flex-direction: column;
+    }
+    #formContainer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 } 
 
 @media screen and (min-width: 631px) and (max-width: 830px) { 
@@ -58,6 +67,9 @@
 
 }
 
+/* @media (max-width: 660px) {
+
+} */
 
 
 
