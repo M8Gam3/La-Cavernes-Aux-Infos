@@ -102,7 +102,7 @@ if(isset($_COOKIE['preference'])){
 
                 <!-- Titre de l'article -->
                 <h3 class="titleArticles"> <?php echo $titres[$i] -> title; ?> </h3>
-
+                <div class="transition"><span></span></div>
                 <!-- Description de l'article -->
                 <p class="descriptionArticles">
                 <?php 
@@ -116,7 +116,7 @@ if(isset($_COOKIE['preference'])){
                 <form method="get" action="./oneArticle.php" >
                 <input type="checkbox" style="display:none" value="<?php echo $urlXmlSport ?>" name="xmlurl" checked>
                 <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-                <input value="Lire l'article" type="submit" href="<?php echo $titres[$i] -> link?>"></input>
+                <input class="readArticle" value="Lire l'article" type="submit" href="<?php echo $titres[$i] -> link?>"></input>
                 </div>
                 </form>
                 <?php }   ?>
@@ -155,6 +155,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titresEco[$i] -> title; ?> </h3>
+                    <div class="transition"><span></span></div>
 
                     <!-- Description de l'article -->
                     <p class="descriptionArticles">
@@ -169,7 +170,7 @@ if(isset($_COOKIE['preference'])){
                     <form method="get" action="./oneArticle.php" >
                         <input type="checkbox" style="display:none" value="<?php echo $urlXmlEconomie ?>" name="xmlurl" checked>
                         <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-                        <input value="Lire l'article" type="submit" href="<?php echo $titresEco[$i] -> link?>"></input>
+                        <input class="readArticle" value="Lire l'article" type="submit" href="<?php echo $titresEco[$i] -> link?>"></input>
                         </div>
                     </form> 
                     <?php }   ?>
@@ -209,6 +210,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titresEnvir[$i] -> title; ?> </h3>
+                    <div class="transition"><span></span></div>
 
                     <!-- Description de l'article -->
                     <p class="descriptionArticles">
@@ -223,7 +225,7 @@ if(isset($_COOKIE['preference'])){
                     <form method="get" action="./oneArticle.php" >
                     <input type="checkbox" style="display:none" value="<?php echo $urlXmlEnvironnement ?>" name="xmlurl" checked>
                     <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-                    <input value="Lire l'article" type="submit" href="<?php echo $titresEnvir[$i] -> link?>"></input>
+                    <input class="readArticle" value="Lire l'article" type="submit" href="<?php echo $titresEnvir[$i] -> link?>"></input>
                     </div>
                     </form>
                     <?php }   ?>
@@ -263,6 +265,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titrespol[$i] -> title; ?> </h3>
+                    <div class="transition"><span></span></div>
 
                     <!-- Description de l'article -->
                     <p class="descriptionArticles">
@@ -277,7 +280,7 @@ if(isset($_COOKIE['preference'])){
                     <form method="get" action="./oneArticle.php" >
                     <input type="checkbox" style="display:none" value="<?php echo $urlPolitique ?>" name="xmlurl" checked>
                     <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-                    <input value="Lire l'article" type="submit" href="<?php echo $titrespol[$i] -> link?>"></input>
+                    <input class="readArticle" value="Lire l'article" type="submit" href="<?php echo $titrespol[$i] -> link?>"></input>
                     </div>
                     </form>
                     <?php }   ?>
@@ -320,6 +323,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titresnum[$i] -> title; ?> </h3>
+                    <div class="transition"><span></span></div>
 
                     <!-- Description de l'article -->
                     <p class="descriptionArticles">
@@ -334,7 +338,7 @@ if(isset($_COOKIE['preference'])){
                     <form method="get" action="./oneArticle.php" >
                     <input type="checkbox" style="display:none" value="<?php echo $urlNumerique ?>" name="xmlurl" checked>
                     <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-                    <input value="Lire l'article" type="submit" href="<?php echo $titresnum[$i] -> link?>"></input>
+                    <input class="readArticle" value="Lire l'article" type="submit" href="<?php echo $titresnum[$i] -> link?>"></input>
                     </div>
                     </form>
                     <?php }   ?>
@@ -373,6 +377,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titressan[$i] -> title; ?> </h3>
+                    <div class="transition"><span></span></div>
 
                     <!-- Description de l'article -->
                     <p class="descriptionArticles">
@@ -388,7 +393,7 @@ if(isset($_COOKIE['preference'])){
                         <input type="checkbox" style="display:none" value="<?php echo $urlXmlSante ?>" name="xmlurl" checked>
                         <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
 
-                        <input value="Lire l'article" type="submit" href="<?php echo $titressan[$i] -> link?>"></input>
+                        <input class="readArticle"  value="Lire l'article..." type="submit" href="<?php echo $titressan[$i] -> link?>"></input>
 
                         </div>
                     </form>
@@ -428,6 +433,7 @@ if(isset($_COOKIE['preference'])){
 
                 <!-- Titre de l'article -->
                 <h3 class="titleArticles"> <?php echo $titres[$i] -> title; ?> </h3>
+                <div class="transition"><span></span></div>
 
                 <!-- Description de l'article -->
                 <p class="descriptionArticles">
@@ -442,7 +448,7 @@ if(isset($_COOKIE['preference'])){
                 <form method="get" action="./oneArticle.php" >
                     <input type="checkbox" style="display:none" value="<?php echo $urlAutres ?>" name="xmlurl" checked>
                     <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-                    <input value="Lire l'article" type="submit" href="<?php echo $titres[$i] -> link?>"></input>
+                    <input class="readArticle" value="Lire l'article" type="submit" href="<?php echo $titres[$i] -> link?>"></input>
                     </div>
                 </form>
 

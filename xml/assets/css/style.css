@@ -27,6 +27,42 @@
     text-decoration: none;
 }
 
+h2{
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+}
+
+h3{
+    font-family: 'Bebas Neue';
+}
+
+.thematique p{
+    padding : 10px 0 10px 0;
+}
+
+.thematique img{
+    height: 200px;
+    width: 100%;
+}
+
+
+.transition{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.readArticle{
+    border:none;
+    background-color: #ffffff;
+    text-decoration: underline;
+    color:rgb(48, 48, 48);
+}
+
+.readArticle:hover{
+    color:black;
+}
+
 /* ----------------- bloc des thématiques choisis ------------------- */
 .wrap{
     display: flex;
@@ -91,6 +127,7 @@
 
 .thematique{
     padding: 20px 0 20px 0;
+    width: 28vw;
 }
 
 .titleArticles{
