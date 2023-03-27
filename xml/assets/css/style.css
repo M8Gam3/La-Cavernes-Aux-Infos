@@ -173,7 +173,7 @@ h2{
     flex-direction: column;
 }
 
-#mainOneArticle img, #mainOneArticle p, #mainOneArticle h1{
+#mainOneArticle img, #mainOneArticle h1{
     width: 60vw;
 }
 
