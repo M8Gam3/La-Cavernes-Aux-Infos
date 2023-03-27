@@ -31,6 +31,10 @@
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    #formContainer img {
+        height: 40vw;
+    }
 } 
 
 @media screen and (min-width: 631px) and (max-width: 830px) { 
