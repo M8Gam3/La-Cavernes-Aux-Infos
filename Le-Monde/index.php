@@ -15,32 +15,26 @@
     <header></header>
     <main></main>
     <footer >
-        <div class="container">
-
-            <div class="box1">
-            <ul>
-                <li>Aide FAQ</li>
-                <li>Mentions légales</li>
-                <li>Confidentialité</li>
-            </ul>
+    <div class="box1">
+                <p>Aide FAQ</p>
+                <p>Mentions légales</p>
+                <p>Confidentialité</p>
             </div>
             <div class="box2">
                 <div class="logo">
-                <img src="./assets/logo_lcai.png" alt="">
+                    <img src="./assets/img/logo_lcai.png" alt="">
                 </div>
                 <div class="reseaux">
-                <img src="./assets/discord.png" alt="">
-                <img src="./assets/instagram.png" alt="">
+                    <img src="./assets/img/discord.png" alt="">
+                    <img src="./assets/img/instagram.png" alt="">
                 </div>
             </div>
             <div class="box3">
-                <ul>
-                <li>Conditions d'utilisations</li>
-                <li>Nos journalistes</li>
-                <li>Gestion des cookies</li>
-                </ul>
+                <p>Conditions d'utilisations</p>
+                <p>Nos journalistes</p>
+                <p>Gestion des cookies</p>
             </div>
-            </div>
+
     </footer>
 
 </body>

@@ -2,33 +2,44 @@
     margin: 0;
 }
 footer{
-    background-color: #6B7B8C;
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
+    background-color: #3B3B3B;
     color: white;
-    height: 30vh;
-    padding-top: 5%; 
-    padding-bottom: 5%;
-}
-.container{
+    font-family: 'Bebas Neue';
+    height: 45vh;
     display: flex;
+    font-size: 1.5vw;
     justify-content: space-around;
 }
 .logo img{
-    width: 20rem;
-    height: 10rem;
+    height: 25vh;
 }
-.box1 ul li{
-    align-items: center;
-    list-style-type: none;
-}
-.box3 ul li{
-    align-items: center;
-    list-style-type: none;
-}
-.reseaux{
+
+.box1{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+.box2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+@media only screen and (max-width: 391px) {
+    footer{
+        flex-direction: column;
+    }
+    .box1{
+        order: 2;
+    }
+    .box3{
+        order: 1;
+    }
+  }

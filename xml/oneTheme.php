@@ -90,7 +90,7 @@ $listeXML = simplexml_load_file($_GET['sante']);
             </div>
             <div class="box2">
                 <div class="logo">
-                    <img src="./assets/img/logo_lcai.png" alt="">
+                    <img src="./assets/img/logo_blanc" alt="">
                 </div>
                 <div class="reseaux">
                     <img src="./assets/img/discord.png" alt="">

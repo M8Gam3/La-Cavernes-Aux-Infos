@@ -220,7 +220,6 @@ footer{
 .logo img{
     height: 25vh;
 }
-
 .box1{
     display: flex;
     align-items: center;
@@ -239,3 +238,24 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
+@media only screen and (max-width: 391px) {
+    footer{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .box1{
+        order: 2;
+    }
+    .box3{
+        order: 1;
+    }
+    .logo img{
+        height: 20vh;
+    }
+    .box3{
+        font-size: 4vh;
+    }
+    .box1{
+        font-size: 4vh;
+    }
+  }
