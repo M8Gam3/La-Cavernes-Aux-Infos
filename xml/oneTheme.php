@@ -70,33 +70,31 @@ if(isset($_COOKIE['preference'])){
                     <?php
                     for($i = 0; $i < sizeof($listeXMLitem); $i++ /*$titres as $item*/){ ?>
 
+                        <div class="thematique">   
 
-                    <div class="thematique">   
+                            <!-- Image de l'article -->
+                            <img src="<?php if(!is_null($listeXML -> channel -> item[$i] -> enclosure['url'])) { echo $listeXML -> channel -> item[$i] -> enclosure['url'];} else{echo $listeXML -> channel -> item[$i] -> children( 'media', True )->content->attributes()['url'];}?>"/>
 
-                    <!-- Image de l'article -->
-                    <img src="<?php if(!is_null($listeXML -> channel -> item[$i] -> enclosure['url'])) { echo $listeXML -> channel -> item[$i] -> enclosure['url'];} else{echo $listeXML -> channel -> item[$i] -> children( 'media', True )->content->attributes()['url'];}?>"/>
+                            <!-- Titre de l'article -->
+                            <h3 class="titleArticles"> <?php echo $listeXMLitem[$i] -> title; ?> </h3>
 
-                    <!-- Titre de l'article -->
-                    <h3 class="titleArticles"> <?php echo $listeXMLitem[$i] -> title; ?> </h3>
+                            <!-- Description de l'article -->
+                            <p class="descriptionArticles">
+                            <?php 
+                            echo $listeXMLitem[$i] -> description?> </p>
 
-                    <!-- Description de l'article -->
-                    <p class="descriptionArticles">
-                    <?php 
-                    echo $listeXMLitem[$i] -> description?> </p>
+                            <!-- Date de publication de l'article -->
+                            <p>
+                            <?php echo $listeXMLitem[$i] -> pubDate ?> </p>
 
-                    <!-- Date de publication de l'article -->
-                    <p>
-                    <?php echo $listeXMLitem[$i] -> pubDate ?> </p>
+                            <!-- Bouton pour afficher l'article en grand pour le lire -->
+                            <form method="get" action="./oneArticle.php" >
+                                <input type="checkbox" style="display:none" value="<?php echo $_GET['sante'] ?>" name="xmlurl" checked>
+                                <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
 
-                    <!-- Bouton pour afficher l'article en grand pour le lire -->
-                    <form method="get" action="./oneArticle.php" >
-                        <input type="checkbox" style="display:none" value="<?php echo $_GET['sante'] ?>" name="xmlurl" checked>
-                        <input type="checkbox" style="display:none" value="<?php echo $i ?>" name="articleSimple" checked>
-
-                        <input value="Lire l'article" type="submit" href="<?php echo $listeXMLitem[$i] -> link?>"></input>
-
+                                <input value="Lire l'article" type="submit" href="<?php echo $listeXMLitem[$i] -> link?>"></input>
+                            </form>
                         </div>
-                    </form>
                     <?php }   ?>
 
                 </div> 
