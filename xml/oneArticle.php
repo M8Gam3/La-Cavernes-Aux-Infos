@@ -23,9 +23,9 @@ $xmldecrypt = simplexml_load_file($url);
         </div>
         <div id="navbar">
             <ul>
-                <a href="./accueilClean.php">Vos thématiques</a>
+                <a href="./index.php">Vos thématiques</a>
                 <a href="./preferences.php">Mes Préférences</a>
-                <a href="">Découvrez aussi</a>
+                <a href="./index.php#decouvrezAussi">Découvrez aussi</a>
             </ul>
         </div>
     </header>
