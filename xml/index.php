@@ -151,7 +151,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Image de l'article -->
                     <img class="img-size" src="<?php 
-                     echo $titresEco[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
+                    echo $titresEco[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titresEco[$i] -> title; ?> </h3>
@@ -205,7 +205,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Image de l'article -->
                     <img class="img-size" src="<?php 
-                     echo $titresEnvir[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
+                    echo $titresEnvir[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titresEnvir[$i] -> title; ?> </h3>
@@ -259,7 +259,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Image de l'article -->
                     <img class="img-size" src="<?php 
-                     echo $titrespol[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
+                    echo $titrespol[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titrespol[$i] -> title; ?> </h3>
@@ -316,7 +316,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Image de l'article -->
                     <img class="img-size" src="<?php 
-                     echo $titresnum[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
+                    echo $titresnum[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titresnum[$i] -> title; ?> </h3>
@@ -369,7 +369,7 @@ if(isset($_COOKIE['preference'])){
 
                     <!-- Image de l'article -->
                     <img class="img-size" src="<?php 
-                     echo $titressan[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
+                    echo $titressan[$i] -> children( 'media', True )->content->attributes()['url']; ?>">
 
                     <!-- Titre de l'article -->
                     <h3 class="titleArticles"> <?php echo $titressan[$i] -> title; ?> </h3>
