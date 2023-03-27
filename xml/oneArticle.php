@@ -57,16 +57,17 @@ if(isset($_COOKIE['preference'])){
         </div>
     </header>
     <main id="mainOneArticle">
-        <h1><?php echo $xmldecrypt -> channel -> item[$index] -> title?></h1>
-
-
-        <img src="<?php if(!is_null($xmldecrypt -> channel -> item[$index] -> enclosure['url'])) { echo $xmldecrypt -> channel -> item[$index] -> enclosure['url'];} else{echo $xmldecrypt -> channel -> item[$index] -> children( 'media', True )->content->attributes()['url'];}?>"/>
-
-
-        <p><?php echo $xmldecrypt -> channel -> item[$index] -> description?></p>
-        <p><?php echo $xmldecrypt -> channel -> item[$index] -> pubDate?></p>
-
-        <a href="<?php echo $xmldecrypt -> channel -> item[$index] -> link?>"><button >Lire l'article sur le site officiel</button></a>
+    <h1><?php echo $xmldecrypt -> channel -> item[$index] -> title?></h1>
+        <div id="container-article">
+            <div >
+                <img id="img-article" src="<?php if(!is_null($xmldecrypt -> channel -> item[$index] -> enclosure['url'])) { echo $xmldecrypt -> channel -> item[$index] -> enclosure['url'];} else{echo $xmldecrypt -> channel -> item[$index] -> children( 'media', True )->content->attributes()['url'];}?>"/>
+            </div>
+            <div id="desc-date-article">
+                <p id="description-oneArticle"><?php echo $xmldecrypt -> channel -> item[$index] -> description?></p>
+                <p id="date-oneArticle"><?php echo $xmldecrypt -> channel -> item[$index] -> pubDate?></p>
+                <a href="<?php echo $xmldecrypt -> channel -> item[$index] -> link?>"><button id="btn-readarticle" class="btn-readmore">Lire l'article sur le site officiel</button></a>
+            </div>    
+        </div>
     </main>
 </body>
 </html>
