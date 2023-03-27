@@ -470,5 +470,26 @@ if(isset($_COOKIE['preference'])){
                 </div>
         </div>
     </main>
+    <footer >
+            <div class="box1">
+                <p>Aide FAQ</p>
+                <p>Mentions légales</p>
+                <p>Confidentialité</p>
+            </div>
+            <div class="box2">
+                <div class="logo">
+                    <img src="./assets/img/logo_blanc" alt="">
+                </div>
+                <div class="reseaux">
+                    <img src="./assets/img/discord.png" alt="">
+                    <img src="./assets/img/instagram.png" alt="">
+                </div>
+            </div>
+            <div class="box3">
+                <p>Conditions d'utilisations</p>
+                <p>Nos journalistes</p>
+                <p>Gestion des cookies</p>
+            </div>
+    </footer>
 </body>
 </html>
